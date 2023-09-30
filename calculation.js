@@ -1,7 +1,7 @@
 function calculateSum() {
 var calculationInput = document.getElementById("calculationInput").value;
 
-// Check if the input contains only numbers, plus signs, commas, empty string, and space
+    
 var isValidInput = /^[0-9,+,\s]*$/.test(calculationInput);
 
 if (!isValidInput) {
@@ -35,4 +35,9 @@ for (var i = 0; i < input.length; i++) {
 }
 
 alert(errorDetails);
+}
+
+function clearInput() {
+    document.getElementById("calculationInput").value = "";
+    document.getElementById("result").innerText = "";
 }
